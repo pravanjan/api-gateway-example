@@ -7,7 +7,7 @@ plugins {
 
 group = 'com.app'
 version = '0.0.1'
-sourceCompatibility = '8'
+sourceCompatibility = '11'
 
 repositories {
     mavenCentral()
@@ -27,3 +27,10 @@ dependencyManagement {
         mavenBom "org.springframework.cloud:spring-cloud-dependencies:${springCloudVersion}"
     }
 }
+
+task copyJarFile(type: Copy) {
+    from file("${buildDir}/libs/${project.name}-${project.version}.jar")
+    into file("${projectDir}/release")
+}
+
+build.finalizedBy(copyJarFile)
