@@ -7,3 +7,5 @@ o
 ?api-getway-app/src/main/java/com/aw/app/GatewayApplication.java,e/4/e4a889535975848a756a68edeb289b49b9ea9b2b
 ?
 settings.gradle,0/5/05efc8b1657769a27696d478ded1e95f38737233
+K
+api-getway-app/build.gradle,a/a/aaac8025f8596e46f33ee1f44d63d4c555cd7a87

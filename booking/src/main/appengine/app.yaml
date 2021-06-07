@@ -1,0 +1,7 @@
+
+
+# [START gae_java11_yaml]
+runtime: java11
+# [END gae_java11__yaml]
+entrypoint: java -Xmx64m -jar booking-0.0.1.jar
+
