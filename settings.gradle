@@ -10,7 +10,6 @@
 rootProject.name = 'api-getway-example'
 include 'contact'
 include 'booking'
-
 include 'api-getway-app'
-include 'booking'
+include 'payments'
 

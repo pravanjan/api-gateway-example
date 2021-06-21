@@ -13,9 +13,9 @@ public class GatewayApplication {
         SpringApplication.run(GatewayApplication.class,args);
     }
 
-    @Bean
-    public ZullCustomFilter simpleFilter() {
-        return new ZullCustomFilter();
-    }
+//    @Bean
+//    public ZullCustomFilter simpleFilter() {
+//        return new ZullCustomFilter();
+//    }
 
 }

@@ -1,0 +1,27 @@
+zuul:
+  routes:
+    contact:
+       path: /api/v0/contact/**
+       url: https://pr-dot-aw-api-gateway.uc.r.appspot.com
+    booking:
+      path: /api/v0/booking/**
+      url: https://20210607t150308-dot-aw-api-gateway.uc.r.appspot.com
+    payments:
+      path: /api/v0/payments/**
+      url: https://payments-dot-aw-api-gateway.uc.r.appspot.com
+  ratelimit:
+    enabled: true
+    repository: REDIS
+    behind-proxy: true
+    response-header: standard
+    policy-list:
+      payments:
+       - limit: 2
+         refresh-interval: 5
+         type:
+          - origin
+  strip-prefix: false
+
+server:
+   port: 8080
+
